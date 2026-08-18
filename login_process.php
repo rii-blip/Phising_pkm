@@ -4,8 +4,8 @@ ini_set('display_errors', 1);
 
 // 1. Koneksi ke Database XAMPP (MySQL)
 $host     = "localhost";
-$db_user  = "root";     // Default XAMPP
-$db_pass  = "";         // Default XAMPP kosong
+$db_user  = "Ridwanmp";     // Default XAMPP
+$db_pass  = "1904";         // Default XAMPP kosong
 $db_name  = "db_user";  // Pastikan nama database ini sudah dibuat di phpMyAdmin
 
 $conn = new mysqli($host, $db_user, $db_pass, $db_name);

