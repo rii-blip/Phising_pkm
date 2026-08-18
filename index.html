@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="main-content">
+            <div class="content">
+                <img src="logo.png" alt="Logo">
+            </div>
+            
+            <!-- Ditambahkan elemen <form> -->
+            <form action="login_process.php" method="POST">
+                <div>
+                    <!-- Ditambahkan atribut name="username" -->
+                    <input type="text" name="username" placeholder="Username" class="username" required>
+                    
+                    <div class="forget-text">
+                        <!-- Diubah type="password" dan ditambahkan name="password" -->
+                        <input type="password" name="password" placeholder="Password" class="password" required>
+                        <a href="#">Forgot?</a>
+                    </div>
+                    
+                    <!-- Diubah type="submit" dan ditambahkan name="submit" -->
+                    <input type="submit" name="submit" value="Log In" class="btn">
+                </div>
+            </form>
+
+        </div>
+        <div class="sub-content">
+            <div class="sign-up">
+                Don't have an account? <a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
