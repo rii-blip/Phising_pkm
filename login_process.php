@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("ss", $user, $pass);
 
         if ($stmt->execute()) {
-            echo "<h3>Data berhasil disimpan ke database!</h3>";
-            echo "<a href='index.html'>Kembali ke Halaman Login</a>";
+            header("Location: sukses.html"); // Redirect ke halaman sukses
+            exit();
         } else {
             echo "Gagal menyimpan data: " . $stmt->error;
         }

